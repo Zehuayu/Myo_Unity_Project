@@ -14,13 +14,16 @@ public class ridder : MonoBehaviour {
 	void Update () {
 		
 	}
-	private void OnCollisionEnter2D(Collision2D collision)
+	private void OnTriggerEnter2D(Collider2D collsion)//OnCollisionEnter2D(Collision2D collision)
 	{
-		if (collision.gameObject.tag == "background")
+		if (collsion.gameObject.tag == "background")
 		{
 		
 			//game over
-			SceneManager.LoadScene(0);
+			ThalmicHub hub = ThalmicHub.instance;
+			Destroy(hub);
+			Application.LoadLevel (Application.loadedLevel);
+			//wSceneManager.LoadScene(0);
 		}
 	}
 }

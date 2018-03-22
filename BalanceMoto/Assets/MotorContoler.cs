@@ -58,9 +58,23 @@ public class MotorContoler : MonoBehaviour {
 			} else if (thalmicMyo.pose == Pose.Fist) {
 		
 
-				rg.AddTorque (-rotation * Input.GetAxis ("Horizontal") * Time.deltaTime);
+				rg.AddTorque (-rotation * 10 * Time.deltaTime);
 
 				ExtendUnlockAndNotifyUserAction (thalmicMyo);
+			} else if (thalmicMyo.pose == Pose.FingersSpread)
+			{
+
+
+				rg.AddTorque (rotation * 10 * Time.deltaTime);
+
+				ExtendUnlockAndNotifyUserAction (thalmicMyo);
+
+			} 
+			else if (thalmicMyo.pose == Pose.DoubleTap) {
+			
+				ThalmicHub hub = ThalmicHub.instance;
+				Destroy(hub);
+				Application.LoadLevel (Application.loadedLevel);
 			}
 		
 		}	

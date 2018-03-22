@@ -20,7 +20,10 @@ public class Winline : MonoBehaviour {
 		if (collsion.gameObject.tag == "winline")
 		{
 			//game over
-			SceneManager.LoadScene(0);
+			ThalmicHub hub = ThalmicHub.instance;
+			Destroy(hub);
+			Application.LoadLevel (Application.loadedLevel);
+		//	SceneManager.LoadScene(0);
 		}
 	}
 }
