@@ -1,6 +1,6 @@
 # Myo_Unity_Project
- Myo app with Unity     developer: Zehua YU 
- Student ID: G00307279   Lecturer: Damien
+ Myo app with Unity    /br developer: Zehua YU /br
+ Student ID: G00307279 /br  Lecturer: Damien
 ## The Requirement of project
 
 Purpose of the application : design of the application including the screens of the user interface and
