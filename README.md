@@ -72,8 +72,11 @@ MotorContoler: this class contains all operational function including the sensoe
 CameraFollow: this is sample class for the monitor following the motor
 DeathLine Winline: them are conditional class, when motor got them, one result will be happen
 
+## Gusture
 
-## Resource from      
+![](https://github.com/Zehuayu/Myo_Unity_Project/blob/master/iamges/111.gif)
+
+## Resource from      
 https://developer.thalmic.com/start  
 https://www.bilibili.com/video/av10088732       
 
