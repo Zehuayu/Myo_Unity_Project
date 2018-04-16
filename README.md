@@ -68,6 +68,11 @@ when restart the game, the program needs to close the Myo connection.
 				Destroy(hub);
 				Application.LoadLevel (Application.loadedLevel);
 
+## The Process of Development
+
+Firstly, I finished the game follow the tutorial of game. the website of MYO gives the developing example for MYO sensor, to understand the means of code and code the same functionality in my project. Finally, testing the code and let it is successfully running in my laptop.
+
+
 ## class introduction
 
 MotorContoler: this class contains all operational function including the sensoer code
